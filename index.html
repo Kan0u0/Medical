@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Haven - Your Trusted Medical Center</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+    
+<body>
+
+  <!-- Header -->
+  <header>
+      <div class="container">
+          <!-- Logo -->
+          <div class="logo">
+              Health <span>Haven</span>
+          </div>
+
+          <!-- Mobile Menu Icon -->
+          <div class="menu-toggle" id="mobile-menu">
+              <i class="fas fa-bars"></i>
+          </div>
+
+          <!-- Navigation Links -->
+          <nav>
+              <ul class="nav-links" id="nav-links">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about-us">About</a></li>
+                  <li><a href="#our-expertise">Expertise & Resources</a></li>
+                  <li><a href="#our-doctors">Doctors</a></li>
+                  <li><a href="#testimonials">Testimonials</a></li>
+                  <li><a href="#blogs">Blogs</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+      const mobileMenu = document.getElementById('mobile-menu');
+      const navLinks = document.getElementById('nav-links');
+
+      mobileMenu.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+      });
+  </script>
+
+</body>
+</html>
+
+
+
+        
+    
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Taking Care of Your Health is Our Priority</h1>
+            <p>We provide top-notch medical services for all patients.</p>
+            <!-- Link to the Get Appointment Section -->
+            <a href="#get-appointment" class="btn-primary">Get an Appointment</a>
+        </div>
+        <img src="hero.jpg" alt="Doctor Image">
+    </section>
+    
+
+    <section id="about-us">
+        <div class="about-content">
+            <h2>What We Do</h2>
+            <p>We are a healthcare provider focused on delivering quality services to our patients. Our team of professionals works around the clock to ensure the highest standard of care and support.</p>
+            <a href="#learn-more" class="learn-more">Learn More</a>
+        </div>
+        <div class="about-img">
+            <img src="about.jpg" alt="About Us Image">
+        </div>
+    </section>
+
+    <section id="impact">
+        <div class="impact-grid" style="display: flex; gap: 25px;"  >
+            <div class="impact-item">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Improved Health Outcomes</h3>
+                <span class="number">150,000</span> <!-- Number subtitle -->
+            </div>
+            <div class="impact-item">
+                <i class="fas fa-users"></i>
+                <h3>Community Engagement</h3>
+                <span class="number">20,000</span> <!-- Number subtitle -->
+            </div>
+            <div class="impact-item">
+                <i class="fas fa-stethoscope"></i>
+                <h3>Advanced Medical Equipment</h3>
+                <span class="number">500</span> <!-- Number subtitle -->
+            </div>
+            <div class="impact-item">
+                <i class="fas fa-hands-helping"></i>
+                <h3>Dedicated Healthcare Professionals</h3>
+                <span class="number">4,000</span> <!-- Number subtitle -->
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section id="our-expertise">
+        <h2 class="section-heading" style="text-align: center;">Our Expertise</h2>
+        <div class="expertise-grid">
+            <div class="expertise-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Health Monitoring</h3>
+                <p>We provide comprehensive health tracking to ensure you stay in optimal health.</p>
+            </div>
+            <div class="expertise-card">
+                <i class="fas fa-stethoscope"></i>
+                <h3>General Checkups</h3>
+                <p>Routine checkups to keep track of your health and prevent potential illnesses.</p>
+            </div>
+            <div class="expertise-card">
+                <i class="fas fa-syringe"></i>
+                <h3>Vaccinations</h3>
+                <p>Protect yourself with our full range of vaccination services for all ages.</p>
+            </div>
+            <div class="expertise-card">
+                <i class="fas fa-x-ray"></i>
+                <h3>Diagnostic Imaging</h3>
+                <p>State-of-the-art imaging services to provide accurate and fast results.</p>
+            </div>
+            <div class="expertise-card">
+                <i class="fas fa-user-md"></i>
+                <h3>Specialized Consultations</h3>
+                <p>Access top specialists for personalized consultations and treatment plans.</p>
+            </div>
+            <div class="expertise-card">
+                <i class="fas fa-hospital"></i>
+                <h3>Emergency Care</h3>
+                <p>24/7 emergency care for those unexpected health situations that require immediate attention.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="facilities">
+        <h2 class="section-heading">Our Resources</h2>
+        <div class="facility-grid">
+            <div class="facility-card">
+                <h3>Emergency Care</h3>
+                <p>State-of-the-art emergency care services available 24/7 for urgent medical attention.</p>
+            </div>
+            <div class="facility-card">
+                <h3>Advanced Diagnostics</h3>
+                <p>Cutting-edge imaging and diagnostic tools to detect and diagnose conditions effectively.</p>
+            </div>
+            <div class="facility-card">
+                <h3>Surgical Suite</h3>
+                <p>Modern operating rooms designed to provide top-tier surgical interventions and procedures.</p>
+            </div>
+            <div class="facility-card">
+                <h3>Rehabilitation Center</h3>
+                <p>Our rehabilitation center offers personalized therapy for recovery after treatments and surgeries.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="our-doctors">
+        <h2 class="section-heading">Meet Our Doctors</h2>
+        <div class="doctor-grid">
+            <div class="doctor-card">
+                <img src="dr.smith.jpg" alt="Dr. John Smith">
+                <div class="doctor-info">
+                    <h3>Dr. John Smith</h3>
+                    <p>Cardiologist</p>
+                    <div class="doctor-social">
+                        <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="#" class="btn-primary">View Profile</a>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="janedoe.jpg" alt="Dr. Jane Doe">
+                <div class="doctor-info">
+                    <h3>Dr. Jane Doe</h3>
+                    <p>Pediatrician</p>
+                    <div class="doctor-social">
+                        <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="#" class="btn-primary">View Profile</a>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="Mike.jpg" alt="Dr. Mike Johnson">
+                <div class="doctor-info">
+                    <h3>Dr. Mike Johnson</h3>
+                    <p>Orthopedic Surgeon</p>
+                    <div class="doctor-social">
+                        <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="#" class="btn-primary">View Profile</a>
+                </div>
+            </div>
+            <div class="doctor-card">
+                <img src="emily davis.jpg" alt="Dr. Emily Davis">
+                <div class="doctor-info">
+                    <h3>Dr. Emily Davis</h3>
+                    <p>Neurologist</p>
+                    <div class="doctor-social">
+                        <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="#" class="btn-primary">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="testimonials">
+        <h2 class="section-heading">What Our Patients Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <img src="precious.jpg" alt="Patient 1" class="testimonial-img">
+                <p class="testimonial-text">"Health Haven provided exceptional care and helped me recover faster than I imagined. Highly recommended!"</p>
+                <p class="testimonial-name">Precious Kennedy</p>
+                <p class="testimonial-role">Patient</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="liyah.JPG" alt="Patient 2" class="testimonial-img">
+                <p class="testimonial-text">"The staff here is professional, and the environment is so welcoming. I felt at ease the entire time."</p>
+                <p class="testimonial-name">Liyah Williams</p>
+                <p class="testimonial-role">Patient</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="leonard.jpg" alt="Patient 3" class="testimonial-img">
+                <p class="testimonial-text">"Thank you for the excellent treatment. I truly feel like I'm in the best hands with Health Haven."</p>
+                <p class="testimonial-name">Leonard Jessey</p>
+                <p class="testimonial-role">Patient</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs" class="blog">
+        <h2>Our Latest Blog Posts</h2>
+        <div class="blog-container">
+            <!-- Blog Card 1 -->
+            <div class="blog-card">
+                <img src="Blog1.png" alt="Blog Post 1">
+                <div class="blog-content">
+                    <h3>5 Ways to Boost Your Health This Year</h3>
+                    <p>A guide to practical tips for improving health and wellness in the new year.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <!-- Blog Card 2 -->
+            <div class="blog-card">
+                <img src="blog4.png" alt="Blog Post 2">
+                <div class="blog-content">
+                    <h3>Nutrition Myths: What You Should Really Be Eating</h3>
+                    <p>Debunking common nutrition myths and offering science-backed dietary advice.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <!-- Blog Card 3 -->
+            <div class="blog-card">
+                <img src="blog3.jpg" alt="Blog Post 3">
+                <div class="blog-content">
+                    <h3>The Secret to a Happier Life: Mindfulness</h3>
+                    <p>Exploring how mindfulness can transform mental and emotional well-being.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <!-- Blog Card 4 -->
+            <div class="blog-card">
+                <img src="blog2.jpg" alt="Blog Post 4">
+                <div class="blog-content">
+                    <h3>Importance of Regular Checkups</h3>
+                    <p>Regular checkups are the cornerstone of preventive healthcare, helping to detect potential issues early, ensure overall wellness, and keep you on track for a healthier life.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+<!-- Get Appointment Section -->
+<section id="get-appointment" style="display: flex;">
+    
+    <div class="appointment-container">
+        <div class="form-container">
+            <h2>Get Appointment</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Appointment Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="purpose">Purpose of Appointment</label>
+                    <input type="text" id="purpose" name="purpose" required>
+                </div>
+                <button type="submit" class="btn">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <!-- <div class="image-container" style="margin-right: 10px;"> -->
+        <img src="doctor.jpg" alt="Doctor" class="appointment-image">
+        
+    </div>
+</div>
+</section>
+
+<!-- 
+        <div class="image-container">
+            <img src="doctor.jpg" alt="Doctor" class="appointment-image">
+            
+        </div>
+    </div> -->
+</section>
+
+<!-- Contact Page -->
+<section id="contact">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need further assistance, feel free to reach out to us. We're here to help!</p>
+        
+        <div class="contact-details">
+            <div class="contact-info">
+                <h3>Our Office</h3>
+                <p>Health Haven, 123 Medical Road, City Name, Country</p>
+            </div>
+            <div class="contact-info">
+                <h3>Phone Number</h3>
+                <p>+1 (800) 123-4567</p>
+            </div>
+            <div class="contact-info">
+                <h3>Email Address</h3>
+                <p>info@healthhaven.com</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="contact-name">Full Name</label>
+                    <input type="text" id="contact-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email Address</label>
+                    <input type="email" id="contact-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <!-- Footer Accent Line -->
+    <div class="footer-accent"></div>
+
+    <!-- Footer Navigation Links -->
+    <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#our-expertise">Expertise & Resources</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Footer Contact Information -->
+    <div class="footer-contact">
+        <p class="address">123 Health Haven Road, Suite 101, City, Country</p>
+        <p class="phone"><strong>Phone:</strong> +1 (234) 567-890</p>
+        <p class="email"><strong>Email:</strong> info@healthhaven.com</p>
+    </div>
+
+    <!-- Footer Social Media Links -->
+    <div class="footer-social">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <!-- Footer Bottom Text -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Health Haven. All rights reserved.</p>
+        <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a></p>
+    </div>
+</footer>
+
+<!-- Include Font Awesome (for social media icons) -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
