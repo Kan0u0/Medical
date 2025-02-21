@@ -7,21 +7,24 @@ document.querySelectorAll('nav a').forEach(anchor => {
         document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
     });
 });
-document.addEventListener("DOMContentLoaded", function () {
-    const mobileMenu = document.getElementById("mobile-menu");
-    const navLinks = document.getElementById("nav-links");
 
-    mobileMenu.addEventListener("click", function () {
-        navLinks.classList.toggle("active");
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active"); // Toggle the menu
+    });
+
+    // Optional: Close menu when a link is clicked (for better UX)
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", function () {
+            navLinks.classList.remove("active"); 
+        });
     });
 });
 
-    // Get the menu toggle button and the nav links container
-    const menuToggle = document.getElementById("mobile-menu");
-    const navLinks = document.getElementById("nav-links");
 
-    // Add click event listener to the menu toggle button
-    menuToggle.addEventListener("click", () => {
-        // Toggle the 'active' class on the nav links container
-        navLinks.classList.toggle("active");
-    });
+
+    
