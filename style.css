@@ -98,31 +98,38 @@ header {
         display: block;
     }
 
+
     .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%; /* Place menu directly below the header */
+        position: fixed;
+        top: 0;
         right: 0;
+        width: 250px; /* Sidebar width */
+        height: 100vh;
         background: var(--white);
-        width: 100%;
-        max-height: 100vh; /* Prevents overflow */
-        overflow-y: auto; /* Allows scrolling if needed */
-        text-align: center;
-        box-shadow: 0px 4px 10px var(--shadow-color);
+        box-shadow: -2px 0 10px var(--shadow-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        transform: translateX(100%); /* Hide off-screen */
+        transition: transform 0.3s ease-in-out;
         z-index: 999;
     }
 
     .nav-links.active {
-        display: flex;
+        transform: translateX(0); /* Slide into view */
     }
 
     .nav-links a {
         padding: 15px;
         display: block;
+        font-size: 1rem;
         width: 100%;
-        transition: all 0.3s ease;
+        text-align: center;
     }
+
+    
 
     .nav-links a:hover {
         background: var(--primary-color);
@@ -606,6 +613,8 @@ footer::before {
     padding: 60px 5%;
     background: var(--background-light);
     text-align: center;
+    overflow: hidden; /* Prevents any unnecessary scroll */
+    width: 100%;
 }
 
 /* 📌 Impact Grid (Keeps items aligned properly) */
@@ -613,16 +622,20 @@ footer::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; /* Spacing between items */
+    gap: 30px;
     max-width: 1200px;
+    width: 100%; /* Ensures it stays inside the screen */
+    padding: 0 5%; /* Adds space on the sides to prevent overflow */
 }
 
 /* 🌟 Impact Item - Circular Design */
 .impact-item {
     background: var(--white);
     border-radius: 50%;
-    width: 220px; /* Maintains circular shape */
-    height: 220px;
+    width: 100%; /* Allows responsiveness */
+    max-width: 220px; /* Maintains circular shape but prevents overflow */
+    height: auto; /* Allows flexibility */
+    aspect-ratio: 1/1; /* Ensures it remains a perfect circle */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -674,17 +687,17 @@ footer::before {
     text-align: center;
 }
 
-/* 🔹 MOBILE VIEW (Vertical Stacking) */
 @media (max-width: 768px) {
     .impact-grid {
         flex-direction: column; /* Stacks items vertically */
-        align-items: center; /* Centers them properly */
-        gap: 20px; /* Adds spacing between stacked items */
+        align-items: center;
+        gap: 20px;
+        padding: 0; /* Removes extra side padding */
     }
 
     .impact-item {
-        width: 100%; /* Makes it full-width */
-        max-width: 280px; /* Prevents oversized items */
+        width: 90%; /* Uses a percentage instead of fixed width */
+        max-width: 280px; /* Prevents excessive width */
     }
 }
 
